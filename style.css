@@ -1,0 +1,36 @@
+/* style.css - ComicGraft core styles */
+
+:root {
+  --primary-color: #2b2d42;
+  --accent-color: #ef233c;
+  --bg-color: #f8f9fa;
+  --panel-bg: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app-container {
+  display: flex;
+  flex: 1;
+}
+
+#comic-canvas {
+  background-color: var(--panel-bg);
+  border: 2px dashed var(--border-color);
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
